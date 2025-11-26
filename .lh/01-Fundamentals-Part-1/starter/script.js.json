@@ -1,0 +1,258 @@
+{
+    "sourceFile": "01-Fundamentals-Part-1/starter/script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 60,
+            "patches": [
+                {
+                    "date": 1763898807055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1763899069308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,5 +94,9 @@\n \r\n //template string\r\n const selfIntroduction = `Hello,I'm ${firstName ,a${year-birthyear}year old${job}!!!`\r\n console.log(selfIntroduction);\r\n- \r\n+                                                 c\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1763899083294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,13 +89,14 @@\n // define part\r\n const firstName = \"shyboy\";\r\n const year = 2025;\r\n const birthyear = 2004;\r\n-const job = \"coder\"\r\n+const job = \"coder\"; // 这里补充了分号（规范写法，原代码缺失不报错但建议加上）\r\n \r\n-//template string\r\n-const selfIntroduction = `Hello,I'm ${firstName ,a${year-birthyear}year old${job}!!!`\r\n-console.log(selfIntroduction);\r\n+// 修复后的模板字符串：补全闭合符号、修正变量插入格式、补充合理空格\r\n+const selfIntroduction = `Hello,I'm ${firstName}, a ${year - birthyear} year old ${job}!!!`;\r\n+\r\n+console.log(selfIntroduction); // 控制台输出：Hello,I'm shyboy, a 21 year old coder!!!\r\n                                                  c\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899091120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,14 +89,13 @@\n // define part\r\n const firstName = \"shyboy\";\r\n const year = 2025;\r\n const birthyear = 2004;\r\n-const job = \"coder\"; // 这里补充了分号（规范写法，原代码缺失不报错但建议加上）\r\n+const job = \"coder\"\r\n \r\n-// 修复后的模板字符串：补全闭合符号、修正变量插入格式、补充合理空格\r\n-const selfIntroduction = `Hello,I'm ${firstName}, a ${year - birthyear} year old ${job}!!!`;\r\n-\r\n-console.log(selfIntroduction); // 控制台输出：Hello,I'm shyboy, a 21 year old coder!!!\r\n+//template string\r\n+const selfIntroduction = `Hello,I'm ${firstName ,a${year-birthyear}year old${job}!!!`\r\n+console.log(selfIntroduction);\r\n                                                  c\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899119556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,12 +89,12 @@\n // define part\r\n const firstName = \"shyboy\";\r\n const year = 2025;\r\n const birthyear = 2004;\r\n-const job = \"coder\"\r\n+const job = \"coder\";\r\n \r\n //template string\r\n-const selfIntroduction = `Hello,I'm ${firstName ,a${year-birthyear}year old${job}!!!`\r\n+const selfIntroduction = `Hello,I'm ${firstName} ,a${year-birthyear}year old${job}!!!`\r\n console.log(selfIntroduction);\r\n                                                  c\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899135170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,102 @@\n+// let js = 'amazing'\r\n+// console.log('elaine');\r\n+// console.log(91);\r\n+// console.log(4-3+66-44)\r\n+//  let penis = \"Jms\"\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+//\r\n+// let firstBBno$=\"GAAY......\"\r\n+// console.log(firstBBno$)\r\n+//\r\n+// let newoooo = \"tempo!\";\r\n+// console.log(newoooo);\r\n+//===========================time 20:46===============\r\n+\r\n+// let B = true;\r\n+// console.log(B);\r\n+// console.log(typeof true);\r\n+// console.log(typeof B);\r\n+// console.log(typeof 23333333);\r\n+// console.log('A');\r\n+// console.log(\"A\");\r\n+//  B = 'word'\r\n+// console.log(typeof B);\r\n+//\r\n+// let year;\r\n+// console.log(year);\r\n+//\r\n+// year = 1999;\r\n+// console.log(year);\r\n+//\r\n+// console.log(typeof null)\r\n+\r\n+\r\n+// let age1 = 23;\r\n+// age1= 24;\r\n+// console.log(age1);\r\n+//\r\n+// const age2 = 33;//const完全可以用！\r\n+// console.log(age2);\r\n+//\r\n+// unclaimed = 69;//可以运行，但是永远不要这么做。\r\n+// console.log(unclaimed)\r\n+//\r\n+// const firtName= 'bb';\r\n+// const lasrName = 'cc';\r\n+// console.log(firtName+' '+ lasrName);\r\n+//\r\n+// //======================赋值=======================\r\n+// let x = 10 +5 ;//15\r\n+// x+= 10;//25\r\n+// x*=4;//100\r\n+// x++;//101\r\n+// x--;//100\r\n+// x--;//99\r\n+//\r\n+// console.log(x);\r\n+\r\n+//===================比较=================\r\n+// let now = 2025;\r\n+// const\r\n+//\r\n+// console.log(lasrName);\r\n+//\r\n+// console.log(firtName > lasrName);\r\n+\r\n+//no14----------------------\r\n+// const now = 3999\r\n+// const ageJOJO = now-2344;\r\n+// const ageSOSO = now-2444;\r\n+// console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n+\r\n+//code 001\r\n+const  massMark = 60;\r\n+const  massJonn = 50;\r\n+const  heightMark = 60;\r\n+const  heightJonn = 50;\r\n+\r\n+BMImark = massJonn/heightMark**2;\r\n+console.log(BMImark)\r\n+//...\r\n+\r\n+\r\n+\r\n+//class 017\r\n+// define part\r\n+const firstName = \"shyboy\";\r\n+const year = 2025;\r\n+const birthyear = 2004;\r\n+const job = \"coder\";\r\n+\r\n+//template string\r\n+const selfIntroduction = `Hello,I'm ${firstName} ,a ${year-birthyear} year old ${job}!!!`\r\n+console.log(selfIntroduction);\r\n+                                                 c\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1763899260457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n //template string\r\n const selfIntroduction = `Hello,I'm ${firstName} ,a ${year-birthyear} year old ${job}!!!`\r\n console.log(selfIntroduction);\r\n                                                  c\r\n+console.log(`Just a regular string)`);\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899271622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n //template string\r\n const selfIntroduction = `Hello,I'm ${firstName} ,a ${year-birthyear} year old ${job}!!!`\r\n console.log(selfIntroduction);\r\n                                                  c\r\n-console.log(`Just a regular string)`);\r\n+console.log(`Just a regular string`);\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899280528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \r\n //template string\r\n const selfIntroduction = `Hello,I'm ${firstName} ,a ${year-birthyear} year old ${job}!!!`\r\n console.log(selfIntroduction);\r\n-                                                 c\r\n+                      \r\n console.log(`Just a regular string`);\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899286310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,4 +100,5 @@\n \r\n \r\n \r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1763899410007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,12 @@\n console.log(selfIntroduction);\r\n                       \r\n console.log(`Just a regular string`);\r\n \r\n+console.log('String with \\n\\multiple \\n\\\r\n+lines');\r\n+console.log(Stringmultiple\r\n+lines);\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899416606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,10 +99,10 @@\n console.log(`Just a regular string`);\r\n \r\n console.log('String with \\n\\multiple \\n\\\r\n lines');\r\n-console.log(Stringmultiple\r\n-lines);\r\n+console.log(`Stringmultiple\r\n+lines`);\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763899425086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,109 @@\n+// let js = 'amazing'\r\n+// console.log('elaine');\r\n+// console.log(91);\r\n+// console.log(4-3+66-44)\r\n+//  let penis = \"Jms\"\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+// console.log(penis)\r\n+//\r\n+// let firstBBno$=\"GAAY......\"\r\n+// console.log(firstBBno$)\r\n+//\r\n+// let newoooo = \"tempo!\";\r\n+// console.log(newoooo);\r\n+//===========================time 20:46===============\r\n+\r\n+// let B = true;\r\n+// console.log(B);\r\n+// console.log(typeof true);\r\n+// console.log(typeof B);\r\n+// console.log(typeof 23333333);\r\n+// console.log('A');\r\n+// console.log(\"A\");\r\n+//  B = 'word'\r\n+// console.log(typeof B);\r\n+//\r\n+// let year;\r\n+// console.log(year);\r\n+//\r\n+// year = 1999;\r\n+// console.log(year);\r\n+//\r\n+// console.log(typeof null)\r\n+\r\n+\r\n+// let age1 = 23;\r\n+// age1= 24;\r\n+// console.log(age1);\r\n+//\r\n+// const age2 = 33;//const完全可以用！\r\n+// console.log(age2);\r\n+//\r\n+// unclaimed = 69;//可以运行，但是永远不要这么做。\r\n+// console.log(unclaimed)\r\n+//\r\n+// const firtName= 'bb';\r\n+// const lasrName = 'cc';\r\n+// console.log(firtName+' '+ lasrName);\r\n+//\r\n+// //======================赋值=======================\r\n+// let x = 10 +5 ;//15\r\n+// x+= 10;//25\r\n+// x*=4;//100\r\n+// x++;//101\r\n+// x--;//100\r\n+// x--;//99\r\n+//\r\n+// console.log(x);\r\n+\r\n+//===================比较=================\r\n+// let now = 2025;\r\n+// const\r\n+//\r\n+// console.log(lasrName);\r\n+//\r\n+// console.log(firtName > lasrName);\r\n+\r\n+//no14----------------------\r\n+// const now = 3999\r\n+// const ageJOJO = now-2344;\r\n+// const ageSOSO = now-2444;\r\n+// console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n+\r\n+//code 001\r\n+const  massMark = 60;\r\n+const  massJonn = 50;\r\n+const  heightMark = 60;\r\n+const  heightJonn = 50;\r\n+\r\n+BMImark = massJonn/heightMark**2;\r\n+console.log(BMImark)\r\n+//...\r\n+\r\n+\r\n+\r\n+//class 017\r\n+// define part\r\n+const firstName = \"shyboy\";\r\n+const year = 2025;\r\n+const birthyear = 2004;\r\n+const job = \"coder\";\r\n+\r\n+//template string\r\n+const selfIntroduction = `Hello,I'm ${firstName} ,a ${year-birthyear} year old ${job}!!!`\r\n+console.log(selfIntroduction);\r\n+                      \r\n+console.log(`Just a regular string`);\r\n+\r\n+console.log('String with \\n\\multiple \\n\\\r\n+lines');\r\n+console.log(`String\r\n+multiple\r\n+lines`);\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1763899492787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,4 +106,6 @@\n \r\n \r\n \r\n \r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1763899522387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n console.log(BMImark)\r\n //...\r\n \r\n \r\n-\r\n+/*\r\n //class 017\r\n // define part\r\n const firstName = \"shyboy\";\r\n const year = 2025;\r\n@@ -102,10 +102,13 @@\n lines');\r\n console.log(`String\r\n multiple\r\n lines`);\r\n+*/\r\n \r\n \r\n+//class 018\r\n \r\n \r\n \r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1763899575377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,8 +107,9 @@\n \r\n \r\n //class 018\r\n \r\n+const age = 19;\r\n+const isOldEnough = age >= 18;\r\n \r\n \r\n \r\n-\r\n"
+                },
+                {
+                    "date": 1763906066667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,216 +110,8 @@\n \r\n const age = 19;\r\n const isOldEnough = age >= 18;\r\n \r\n+if (isOldEnough) {\r\n \r\n \r\n-// let js = 'amazing'\r\n-// console.log('elaine');\r\n-// console.log(91);\r\n-// console.log(4-3+66-44)\r\n-//  let penis = \"Jms\"\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-//\r\n-// let firstBBno$=\"GAAY......\"\r\n-// console.log(firstBBno$)\r\n-//\r\n-// let newoooo = \"tempo!\";\r\n-// console.log(newoooo);\r\n-//===========================time 20:46===============\r\n \r\n-// let B = true;\r\n-// console.log(B);\r\n-// console.log(typeof true);\r\n-// console.log(typeof B);\r\n-// console.log(typeof 23333333);\r\n-// console.log('A');\r\n-// console.log(\"A\");\r\n-//  B = 'word'\r\n-// console.log(typeof B);\r\n-//\r\n-// let year;\r\n-// console.log(year);\r\n-//\r\n-// year = 1999;\r\n-// console.log(year);\r\n-//\r\n-// console.log(typeof null)\r\n-\r\n-\r\n-// let age1 = 23;\r\n-// age1= 24;\r\n-// console.log(age1);\r\n-//\r\n-// const age2 = 33;//const完全可以用！\r\n-// console.log(age2);\r\n-//\r\n-// unclaimed = 69;//可以运行，但是永远不要这么做。\r\n-// console.log(unclaimed)\r\n-//\r\n-// const firtName= 'bb';\r\n-// const lasrName = 'cc';\r\n-// console.log(firtName+' '+ lasrName);\r\n-//\r\n-// //======================赋值=======================\r\n-// let x = 10 +5 ;//15\r\n-// x+= 10;//25\r\n-// x*=4;//100\r\n-// x++;//101\r\n-// x--;//100\r\n-// x--;//99\r\n-//\r\n-// console.log(x);\r\n-\r\n-//===================比较=================\r\n-// let now = 2025;\r\n-// const\r\n-//\r\n-// console.log(lasrName);\r\n-//\r\n-// console.log(firtName > lasrName);\r\n-\r\n-//no14----------------------\r\n-// const now = 3999\r\n-// const ageJOJO = now-2344;\r\n-// const ageSOSO = now-2444;\r\n-// console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n-\r\n-//code 001\r\n-const  massMark = 60;\r\n-const  massJonn = 50;\r\n-const  heightMark = 60;\r\n-const  heightJonn = 50;\r\n-\r\n-BMImark = massJonn/heightMark**2;\r\n-console.log(BMImark)\r\n-//...\r\n-\r\n-\r\n-\r\n-//class 017\r\n-// define part\r\n-const firstName = \"shyboy\";\r\n-const year = 2025;\r\n-const birthyear = 2004;\r\n-const job = \"coder\";\r\n-\r\n-//template string\r\n-const selfIntroduction = `Hello,I'm ${firstName} ,a ${year-birthyear} year old ${job}!!!`\r\n-console.log(selfIntroduction);\r\n-                      \r\n-console.log(`Just a regular string`);\r\n-\r\n-console.log('String with \\n\\multiple \\n\\\r\n-lines');\r\n-console.log(`Stringmultiple\r\n-lines`);\r\n-\r\n-\r\n-\r\n-\r\n-// let js = 'amazing'\r\n-// console.log('elaine');\r\n-// console.log(91);\r\n-// console.log(4-3+66-44)\r\n-//  let penis = \"Jms\"\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-// console.log(penis)\r\n-//\r\n-// let firstBBno$=\"GAAY......\"\r\n-// console.log(firstBBno$)\r\n-//\r\n-// let newoooo = \"tempo!\";\r\n-// console.log(newoooo);\r\n-//===========================time 20:46===============\r\n-\r\n-// let B = true;\r\n-// console.log(B);\r\n-// console.log(typeof true);\r\n-// console.log(typeof B);\r\n-// console.log(typeof 23333333);\r\n-// console.log('A');\r\n-// console.log(\"A\");\r\n-//  B = 'word'\r\n-// console.log(typeof B);\r\n-//\r\n-// let year;\r\n-// console.log(year);\r\n-//\r\n-// year = 1999;\r\n-// console.log(year);\r\n-//\r\n-// console.log(typeof null)\r\n-\r\n-\r\n-// let age1 = 23;\r\n-// age1= 24;\r\n-// console.log(age1);\r\n-//\r\n-// const age2 = 33;//const完全可以用！\r\n-// console.log(age2);\r\n-//\r\n-// unclaimed = 69;//可以运行，但是永远不要这么做。\r\n-// console.log(unclaimed)\r\n-//\r\n-// const firtName= 'bb';\r\n-// const lasrName = 'cc';\r\n-// console.log(firtName+' '+ lasrName);\r\n-//\r\n-// //======================赋值=======================\r\n-// let x = 10 +5 ;//15\r\n-// x+= 10;//25\r\n-// x*=4;//100\r\n-// x++;//101\r\n-// x--;//100\r\n-// x--;//99\r\n-//\r\n-// console.log(x);\r\n-\r\n-//===================比较=================\r\n-// let now = 2025;\r\n-// const\r\n-//\r\n-// console.log(lasrName);\r\n-//\r\n-// console.log(firtName > lasrName);\r\n-\r\n-//no14----------------------\r\n-// const now = 3999\r\n-// const ageJOJO = now-2344;\r\n-// const ageSOSO = now-2444;\r\n-// console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n-\r\n-//code 001\r\n-const  massMark = 60;\r\n-const  massJonn = 50;\r\n-const  heightMark = 60;\r\n-const  heightJonn = 50;\r\n-\r\n-BMImark = massJonn/heightMark**2;\r\n-console.log(BMImark)\r\n-//...\r\n-\r\n-\r\n-\r\n-//class 017\r\n-// define part\r\n-const firstName = \"shyboy\";\r\n-const year = 2025;\r\n-const birthyear = 2004;\r\n-const job = \"coder\";\r\n-\r\n-//template string\r\n-const selfIntroduction = `Hello,I'm ${firstName} ,a${year-birthyear}year old${job}!!!`\r\n-console.log(selfIntroduction);\r\n-                                                 c\r\n-\r\n-\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1763906123943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,7 +111,9 @@\n const age = 19;\r\n const isOldEnough = age >= 18;\r\n \r\n if (isOldEnough) {\r\n+    console.log(\"Elain can start deriving license\");\r\n+}\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763906137344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n const age = 19;\r\n const isOldEnough = age >= 18;\r\n \r\n if (isOldEnough) {\r\n-    console.log(\"Elain can start deriving license\");\r\n+    console.log('Elain can start deriving license');\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763906159578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n \r\n \r\n //class 018\r\n \r\n-const age = 19;\r\n+const age = 13;\r\n const isOldEnough = age >= 18;\r\n \r\n if (isOldEnough) {\r\n     console.log('Elain can start deriving license');\r\n"
+                },
+                {
+                    "date": 1763906165754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n \r\n \r\n //class 018\r\n \r\n-const age = 13;\r\n+const age = 22;\r\n const isOldEnough = age >= 18;\r\n \r\n if (isOldEnough) {\r\n     console.log('Elain can start deriving license');\r\n"
+                },
+                {
+                    "date": 1763906204009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,11 +108,10 @@\n \r\n //class 018\r\n \r\n const age = 22;\r\n-const isOldEnough = age >= 18;\r\n \r\n-if (isOldEnough) {\r\n+if (age >= 18) {\r\n     console.log('Elain can start deriving license');\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763906217944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n \r\n \r\n //class 018\r\n \r\n-const age = 22;\r\n+const age = 12;\r\n \r\n if (age >= 18) {\r\n     console.log('Elain can start deriving license');\r\n }\r\n"
+                },
+                {
+                    "date": 1763906227155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,8 +111,10 @@\n const age = 12;\r\n \r\n if (age >= 18) {\r\n     console.log('Elain can start deriving license');\r\n+}else{\r\n+    \r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763906262760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,9 +112,10 @@\n \r\n if (age >= 18) {\r\n     console.log('Elain can start deriving license');\r\n }else{\r\n-    \r\n+    const yearsleft = 18 - age;\r\n+    console.log(``)\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763906316320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,12 +110,12 @@\n \r\n const age = 12;\r\n \r\n if (age >= 18) {\r\n-    console.log('Elain can start deriving license');\r\n+    console.log('Elaine can start deriving license');\r\n }else{\r\n     const yearsleft = 18 - age;\r\n-    console.log(``)\r\n+    console.log(`Eliane is too young.Wait another ${yearsleft} years`);\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763906350782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n lines`);\r\n */\r\n \r\n \r\n-//class 018\r\n+//class 018 template strings \r\n \r\n const age = 12;\r\n \r\n if (age >= 18) {\r\n"
+                },
+                {
+                    "date": 1763906815336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,6 +116,7 @@\n     const yearsleft = 18 - age;\r\n     console.log(`Eliane is too young.Wait another ${yearsleft} years`);\r\n }\r\n \r\n+//structure \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763906829623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,6 +117,6 @@\n     console.log(`Eliane is too young.Wait another ${yearsleft} years`);\r\n }\r\n \r\n //structure \r\n+if(){}else{}\r\n \r\n-\r\n"
+                },
+                {
+                    "date": 1763906848956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,6 +117,6 @@\n     console.log(`Eliane is too young.Wait another ${yearsleft} years`);\r\n }\r\n \r\n //structure \r\n-if(){}else{}\r\n+// if(){}else{}\r\n \r\n"
+                },
+                {
+                    "date": 1763907278979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,15 @@\n const  massJonn = 50;\r\n const  heightMark = 60;\r\n const  heightJonn = 50;\r\n \r\n-BMImark = massJonn/heightMark**2;\r\n+BMImark = massMark/heightMark**2;\r\n+BMIJonn = massJonn/heightJonn**2;\r\n+if(BMImark > BMIJonn){\r\n+    \r\n+}else{\r\n+    \r\n+}\r\n console.log(BMImark)\r\n //...\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763907359063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,11 +81,11 @@\n \r\n BMImark = massMark/heightMark**2;\r\n BMIJonn = massJonn/heightJonn**2;\r\n if(BMImark > BMIJonn){\r\n-    \r\n+    console.log(`Mark's BMI (${BMImark}) is higher!!!`)\r\n }else{\r\n-    \r\n+    console.log(`Jonn's BMI (${BMIJonn}) is higher!!!`)\r\n }\r\n console.log(BMImark)\r\n //...\r\n \r\n"
+                },
+                {
+                    "date": 1763907378094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n // console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n \r\n //code 001\r\n const  massMark = 60;\r\n-const  massJonn = 50;\r\n+const  massJonn = 500;\r\n const  heightMark = 60;\r\n const  heightJonn = 50;\r\n \r\n BMImark = massMark/heightMark**2;\r\n"
+                },
+                {
+                    "date": 1763907383473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n // console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n \r\n //code 001\r\n const  massMark = 60;\r\n-const  massJonn = 500;\r\n+const  massJonn = 5;\r\n const  heightMark = 60;\r\n const  heightJonn = 50;\r\n \r\n BMImark = massMark/heightMark**2;\r\n"
+                },
+                {
+                    "date": 1763907389824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n // console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n \r\n //code 001\r\n const  massMark = 60;\r\n-const  massJonn = 5;\r\n+const  massJonn = 50;\r\n const  heightMark = 60;\r\n const  heightJonn = 50;\r\n \r\n BMImark = massMark/heightMark**2;\r\n"
+                },
+                {
+                    "date": 1763907421508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,11 @@\n const  heightJonn = 50;\r\n \r\n BMImark = massMark/heightMark**2;\r\n BMIJonn = massJonn/heightJonn**2;\r\n+\r\n+console.log(BMIJonn,BMImark);\r\n+\r\n if(BMImark > BMIJonn){\r\n     console.log(`Mark's BMI (${BMImark}) is higher!!!`)\r\n }else{\r\n     console.log(`Jonn's BMI (${BMIJonn}) is higher!!!`)\r\n"
+                },
+                {
+                    "date": 1763907437401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n \r\n BMImark = massMark/heightMark**2;\r\n BMIJonn = massJonn/heightJonn**2;\r\n \r\n-console.log(BMIJonn,BMImark);\r\n+console.log(BMIJonn,\"vs\",BMImark);\r\n \r\n if(BMImark > BMIJonn){\r\n     console.log(`Mark's BMI (${BMImark}) is higher!!!`)\r\n }else{\r\n"
+                },
+                {
+                    "date": 1763907442810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n \r\n BMImark = massMark/heightMark**2;\r\n BMIJonn = massJonn/heightJonn**2;\r\n \r\n-console.log(BMIJonn,\"vs\",BMImark);\r\n+console.log(BMIJonn,vs,BMImark);\r\n \r\n if(BMImark > BMIJonn){\r\n     console.log(`Mark's BMI (${BMImark}) is higher!!!`)\r\n }else{\r\n"
+                },
+                {
+                    "date": 1763907449160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n \r\n BMImark = massMark/heightMark**2;\r\n BMIJonn = massJonn/heightJonn**2;\r\n \r\n-console.log(BMIJonn,vs,BMImark);\r\n+console.log(BMIJonn,'vs',BMImark);\r\n \r\n if(BMImark > BMIJonn){\r\n     console.log(`Mark's BMI (${BMImark}) is higher!!!`)\r\n }else{\r\n"
+                },
+                {
+                    "date": 1763916111564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,4 +128,5 @@\n \r\n //structure \r\n // if(){}else{}\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1763916131269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,4 +129,5 @@\n //structure \r\n // if(){}else{}\r\n \r\n \r\n+// 020\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763916524911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,5 +129,11 @@\n //structure \r\n // if(){}else{}\r\n \r\n \r\n-// 020\n\\ No newline at end of file\n+// 020 different types\r\n+const inputYear = '1991';\r\n+console.log(Number(inputYear),inputYear);\r\n+console.log(inputYear + 18);\r\n+console.log(Number(inputYear) + 18);\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1763916912012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,5 +135,10 @@\n console.log(Number(inputYear),inputYear);\r\n console.log(inputYear + 18);\r\n console.log(Number(inputYear) + 18);\r\n \r\n+console.log(Number('Elaine'));\r\n+console.log(typeof NaN);\r\n+console.log(typeof NaN);\r\n+console.log(String)\r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1763916954974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,7 +138,7 @@\n \r\n console.log(Number('Elaine'));\r\n console.log(typeof NaN);\r\n console.log(typeof NaN);\r\n-console.log(String)\r\n+console.log(String(23),23);\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1763944830707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n const inputYear = '1991';\r\n console.log(Number(inputYear),inputYear);\r\n console.log(inputYear + 18);\r\n console.log(Number(inputYear) + 18);\r\n-\r\n+// seldom use bcs of javscript type coercion类型强制 \r\n console.log(Number('Elaine'));\r\n console.log(typeof NaN);\r\n console.log(typeof NaN);\r\n console.log(String(23),23);\r\n"
+                },
+                {
+                    "date": 1763985750253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,9 +113,9 @@\n multiple\r\n lines`);\r\n */\r\n \r\n-\r\n+/*\r\n //class 018 template strings \r\n \r\n const age = 12;\r\n \r\n@@ -125,12 +125,14 @@\n     const yearsleft = 18 - age;\r\n     console.log(`Eliane is too young.Wait another ${yearsleft} years`);\r\n }\r\n \r\n+*/\r\n+\r\n //structure \r\n // if(){}else{}\r\n \r\n-\r\n+/*\r\n // 020 different types\r\n const inputYear = '1991';\r\n console.log(Number(inputYear),inputYear);\r\n console.log(inputYear + 18);\r\n@@ -139,6 +141,6 @@\n console.log(Number('Elaine'));\r\n console.log(typeof NaN);\r\n console.log(typeof NaN);\r\n console.log(String(23),23);\r\n+*/\r\n \r\n-\r\n"
+                },
+                {
+                    "date": 1763985811962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,9 @@\n // const ageJOJO = now-2344;\r\n // const ageSOSO = now-2444;\r\n // console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n \r\n+/*=============================================\r\n //code 001\r\n const  massMark = 60;\r\n const  massJonn = 50;\r\n const  heightMark = 60;\r\n@@ -90,10 +91,10 @@\n     console.log(`Jonn's BMI (${BMIJonn}) is higher!!!`)\r\n }\r\n console.log(BMImark)\r\n //...\r\n+=============================================*/\r\n \r\n-\r\n /*\r\n //class 017\r\n // define part\r\n const firstName = \"shyboy\";\r\n"
+                },
+                {
+                    "date": 1763985946109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,4 +144,5 @@\n console.log(typeof NaN);\r\n console.log(String(23),23);\r\n */\r\n \r\n+const hasDriverLicense = true;//\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763986043819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,5 +144,6 @@\n console.log(typeof NaN);\r\n console.log(String(23),23);\r\n */\r\n \r\n-const hasDriverLicense = true;//\n\\ No newline at end of file\n+const hasDriverLicense = true;//条件A\r\n+const has\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763986314635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,5 +145,17 @@\n console.log(String(23),23);\r\n */\r\n \r\n const hasDriverLicense = true;//条件A\r\n-const has\n\\ No newline at end of file\n+const hasGoodVsion =  false;//条件B\r\n+\r\n+const ifA = (hasDriverLicense && hasGoodVsion);\r\n+const ifB = (hasDriverLicense || hasGoodVsion);\r\n+const ifC = (!hasDriverLicense);\r\n+\r\n+const shouldDrive = ifA;\r\n+\r\n+if(shouldDrive = true){\r\n+    console.log('Eliane is able to drive!');\r\n+}else{\r\n+    console.log('Maybe Someone else should drive...');\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763986375985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,11 +147,11 @@\n \r\n const hasDriverLicense = true;//条件A\r\n const hasGoodVsion =  false;//条件B\r\n \r\n-const ifA = (hasDriverLicense && hasGoodVsion);\r\n-const ifB = (hasDriverLicense || hasGoodVsion);\r\n-const ifC = (!hasDriverLicense);\r\n+const ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n+const ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n+const ifC = (!hasDriverLicense);//非常宽松的条件C\r\n \r\n const shouldDrive = ifA;\r\n \r\n if(shouldDrive = true){\r\n"
+                },
+                {
+                    "date": 1763986391597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,8 +151,10 @@\n const ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n const ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n const ifC = (!hasDriverLicense);//非常宽松的条件C\r\n \r\n+console.log(typeof ifA);\r\n+\r\n const shouldDrive = ifA;\r\n \r\n if(shouldDrive = true){\r\n     console.log('Eliane is able to drive!');\r\n"
+                },
+                {
+                    "date": 1763986419157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,11 +147,11 @@\n \r\n const hasDriverLicense = true;//条件A\r\n const hasGoodVsion =  false;//条件B\r\n \r\n-const ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n-const ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n-const ifC = (!hasDriverLicense);//非常宽松的条件C\r\n+let ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n+let ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n+let ifC = (!hasDriverLicense);//非常宽松的条件C\r\n \r\n console.log(typeof ifA);\r\n \r\n const shouldDrive = ifA;\r\n"
+                },
+                {
+                    "date": 1763986429767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,15 +147,15 @@\n \r\n const hasDriverLicense = true;//条件A\r\n const hasGoodVsion =  false;//条件B\r\n \r\n-let ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n-let ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n-let ifC = (!hasDriverLicense);//非常宽松的条件C\r\n+const ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n+const ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n+const ifC = (!hasDriverLicense);//非常宽松的条件C\r\n \r\n console.log(typeof ifA);\r\n \r\n-const shouldDrive = ifA;\r\n+let shouldDrive = ifA;\r\n \r\n if(shouldDrive = true){\r\n     console.log('Eliane is able to drive!');\r\n }else{\r\n"
+                },
+                {
+                    "date": 1763986461679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n const ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n const ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n const ifC = (!hasDriverLicense);//非常宽松的条件C\r\n \r\n-console.log(typeof ifA);\r\n+console.log(typeof ifA,ifA);\r\n \r\n let shouldDrive = ifA;\r\n \r\n if(shouldDrive = true){\r\n"
+                },
+                {
+                    "date": 1763986498476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n console.log(typeof ifA,ifA);\r\n \r\n let shouldDrive = ifA;\r\n \r\n-if(shouldDrive = true){\r\n+if(shouldDrive === true){\r\n     console.log('Eliane is able to drive!');\r\n }else{\r\n     console.log('Maybe Someone else should drive...');\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763986509519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n console.log(typeof ifA,ifA);\r\n \r\n let shouldDrive = ifA;\r\n \r\n-if(shouldDrive === true){\r\n+if(shouldDrive == true){\r\n     console.log('Eliane is able to drive!');\r\n }else{\r\n     console.log('Maybe Someone else should drive...');\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763986517655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,11 +153,11 @@\n const ifC = (!hasDriverLicense);//非常宽松的条件C\r\n \r\n console.log(typeof ifA,ifA);\r\n \r\n-let shouldDrive = ifA;\r\n+let shouldDrive = ifB;\r\n \r\n-if(shouldDrive == true){\r\n+if(shouldDrive === true){\r\n     console.log('Eliane is able to drive!');\r\n }else{\r\n     console.log('Maybe Someone else should drive...');\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763986559926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,9 @@\n const ifC = (!hasDriverLicense);//非常宽松的条件C\r\n \r\n console.log(typeof ifA,ifA);\r\n \r\n-let shouldDrive = ifB;\r\n+const shouldDrive = ifB;\r\n \r\n if(shouldDrive === true){\r\n     console.log('Eliane is able to drive!');\r\n }else{\r\n"
+                },
+                {
+                    "date": 1763986578233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n console.log(typeof ifA,ifA);\r\n \r\n const shouldDrive = ifC;\r\n \r\n-if(shouldDrive === true){\r\n+if(shouldDrive = true){\r\n     console.log('Eliane is able to drive!');\r\n }else{\r\n     console.log('Maybe Someone else should drive...');\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1763988003038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n console.log(typeof NaN);\r\n console.log(String(23),23);\r\n */\r\n \r\n-const hasDriverLicense = true;//条件A\r\n+     hasDriverLicense = true;//条件A\r\n const hasGoodVsion =  false;//条件B\r\n \r\n const ifA = (hasDriverLicense && hasGoodVsion);//两者都满足\r\n const ifB = (hasDriverLicense || hasGoodVsion);//有一个满足就行\r\n"
+                }
+            ],
+            "date": 1763898807055,
+            "name": "Commit-0",
+            "content": "// let js = 'amazing'\r\n// console.log('elaine');\r\n// console.log(91);\r\n// console.log(4-3+66-44)\r\n//  let penis = \"Jms\"\r\n// console.log(penis)\r\n// console.log(penis)\r\n// console.log(penis)\r\n// console.log(penis)\r\n// console.log(penis)\r\n//\r\n// let firstBBno$=\"GAAY......\"\r\n// console.log(firstBBno$)\r\n//\r\n// let newoooo = \"tempo!\";\r\n// console.log(newoooo);\r\n//===========================time 20:46===============\r\n\r\n// let B = true;\r\n// console.log(B);\r\n// console.log(typeof true);\r\n// console.log(typeof B);\r\n// console.log(typeof 23333333);\r\n// console.log('A');\r\n// console.log(\"A\");\r\n//  B = 'word'\r\n// console.log(typeof B);\r\n//\r\n// let year;\r\n// console.log(year);\r\n//\r\n// year = 1999;\r\n// console.log(year);\r\n//\r\n// console.log(typeof null)\r\n\r\n\r\n// let age1 = 23;\r\n// age1= 24;\r\n// console.log(age1);\r\n//\r\n// const age2 = 33;//const完全可以用！\r\n// console.log(age2);\r\n//\r\n// unclaimed = 69;//可以运行，但是永远不要这么做。\r\n// console.log(unclaimed)\r\n//\r\n// const firtName= 'bb';\r\n// const lasrName = 'cc';\r\n// console.log(firtName+' '+ lasrName);\r\n//\r\n// //======================赋值=======================\r\n// let x = 10 +5 ;//15\r\n// x+= 10;//25\r\n// x*=4;//100\r\n// x++;//101\r\n// x--;//100\r\n// x--;//99\r\n//\r\n// console.log(x);\r\n\r\n//===================比较=================\r\n// let now = 2025;\r\n// const\r\n//\r\n// console.log(lasrName);\r\n//\r\n// console.log(firtName > lasrName);\r\n\r\n//no14----------------------\r\n// const now = 3999\r\n// const ageJOJO = now-2344;\r\n// const ageSOSO = now-2444;\r\n// console.log(ageJOJO, ageSOSO,2**7,ageSOSO/2);\r\n\r\n//code 001\r\nconst  massMark = 60;\r\nconst  massJonn = 50;\r\nconst  heightMark = 60;\r\nconst  heightJonn = 50;\r\n\r\nBMImark = massJonn/heightMark**2;\r\nconsole.log(BMImark)\r\n//...\r\n\r\n\r\n\r\n//class 017\r\n// define part\r\nconst firstName = \"shyboy\";\r\nconst year = 2025;\r\nconst birthyear = 2004;\r\nconst job = \"coder\"\r\n\r\n//template string\r\nconst selfIntroduction = `Hello,I'm ${firstName ,a${year-birthyear}year old${job}!!!`\r\nconsole.log(selfIntroduction);\r\n \r\n"
+        }
+    ]
+}
