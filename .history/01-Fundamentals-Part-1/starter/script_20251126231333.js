@@ -129,7 +129,7 @@ if (age >= 18) {
 
 */
 
-//structure
+//structure 
 // if(){}else{}
 
 /*
@@ -183,7 +183,7 @@ if(shouldDrive === true){
 // if(scoreD1 > scoreK1){
 //     console.log('dolphin ');
 // }else if(scoreD1 < scoreK1){
-//     console.log('Koalas');
+//     console.log('Koalas');        
 // }else if(scoreD1 === scoreK1){
 //     console.log('Draw');
 // }else{
@@ -227,17 +227,11 @@ if(scoreD1 > scoreK1 && scoreD1 >=100){
 //         console.log('do sth in saturday');
 //     break;
 //     case'sunday':
-//         console.log('do sth in sunday');
+//         console.log('do sth in sunday'); 
 //     break;
 //     default:
 //         console.log('not a valid day');
 // }
-/*
+
 const AGE = 18;
 AGE >= 18 ? console.log('I like to drink wine🍷') : console.log('I like to drink waters水');
- */
-
-//029
-const bill = 430;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);

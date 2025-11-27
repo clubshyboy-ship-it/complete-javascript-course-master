@@ -32,5 +32,3 @@ function myAttitude(c,d) {
 console.log(myAttitude('you','kind'));
 console.log(myAttitude('me', 'brave'));
 ///**Keep your code dry(Dont Repeat Yourself) */
-
-//034 函数声明vs

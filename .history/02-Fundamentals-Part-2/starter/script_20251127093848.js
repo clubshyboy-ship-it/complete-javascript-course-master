@@ -25,12 +25,8 @@ console.log(bookReader('The Great Gatsby', 'The Secret'));//唯一的区别是�
 */
 
 function myAttitude(c,d) {
-    const a = `for the person called ${c},I think he/she is a ${d} person`;
-    return a;
+    const a = `for the person called${c},I think he/she is a ${d} people`;
 }
 
-console.log(myAttitude('you','kind'));
-console.log(myAttitude('me', 'brave'));
-///**Keep your code dry(Dont Repeat Yourself) */
-
-//034 函数声明vs
+myAttitude('you','kind');
+myAttitude('me','brave');
