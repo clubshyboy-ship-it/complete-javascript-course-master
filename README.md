@@ -1,11 +1,12 @@
-<<<<<<< HEAD
+[ ] 
+
 # Course Material and FAQ for my Complete JavaScript Course
 
 This branch of the repo contains starter files and final code for all sections and projects of the course, **exactly as shown in the videos**.
 
 Use starter code to start each section, and **final code to compare it with your own code whenever something doesn't work**!
 
-There is also a the [updates-and-fixes](https://github.com/jonasschmedtmann/complete-javascript-course/tree/updates-and-fixes) branch which is kept up-to-date with **latest package updates and important bugfixes 🐛**
+* [ ]  There is also a the [updates-and-fixes](https://github.com/jonasschmedtmann/complete-javascript-course/tree/updates-and-fixes) branch which is kept up-to-date with **latest package updates and important bugfixes 🐛**
 
 🚨 **_Please read the following Frequently Asked Questions (FAQ) carefully before starting the course_** 🚨
 
@@ -51,7 +52,7 @@ There is also a the [updates-and-fixes](https://github.com/jonasschmedtmann/comp
 
 ### Q9: You mentioned your resources page. Where can I find it?
 
-**A:** It's on my website at <http://codingheroes.io/resources>. You can subscribe for updates 😉
+**A:** It's on my website at [http://codingheroes.io/resources](http://codingheroes.io/resources). You can subscribe for updates 😉
 
 ### Q10: I love your courses and want to get updates on new courses. How?
 
@@ -72,12 +73,20 @@ There is also a the [updates-and-fixes](https://github.com/jonasschmedtmann/comp
 ### Q14: I'm looking for the old course version (v1) files. Where can I find them?
 
 **A:** They are in this same repo, but in the [v1 branch](https://github.com/jonasschmedtmann/complete-javascript-course/tree/v1). So just go to [v1](https://github.com/jonasschmedtmann/complete-javascript-course/tree/v1), and download the code from there.
-=======
+================================================================================================================================================================================================================================================================
+
 # a-fork-of-the-Udemy-JavaScript-practices
 
-### Disclaimer 
+### Disclaimer
 
 This repository contains open-source materials from GitHub of **Udemy**, and it is only used for personal learning backup.
 
 本项目包含来自 **Udemy** 的github开源资料，仅是个人学习备份用。
+
 >>>>>>> 2f00ef712ba309d0c20189471293313deeda8063
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
